@@ -1,0 +1,19 @@
+{
+  "rewrites": [
+    { "source": "/imagenes", "destination": "/imagenes/index.html" },
+    { "source": "/imagenes/", "destination": "/imagenes/index.html" },
+    { "source": "/texto", "destination": "/texto/index.html" },
+    { "source": "/texto/", "destination": "/texto/index.html" },
+    { "source": "/archivos", "destination": "/archivos/index.html" },
+    { "source": "/archivos/", "destination": "/archivos/index.html" },
+    { "source": "/tiempo", "destination": "/tiempo/index.html" },
+    { "source": "/tiempo/", "destination": "/tiempo/index.html" },
+    { "source": "/fechas", "destination": "/fechas/index.html" },
+    { "source": "/fechas/", "destination": "/fechas/index.html" },
+    { "source": "/audio", "destination": "/audio/index.html" },
+    { "source": "/audio/", "destination": "/audio/index.html" },
+    { "source": "/video", "destination": "/video/index.html" },
+    { "source": "/video/", "destination": "/video/index.html" }
+  ],
+  "cleanUrls": true
+}
