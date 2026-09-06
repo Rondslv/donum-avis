@@ -13,7 +13,13 @@
     { "source": "/audio", "destination": "/audio/index.html" },
     { "source": "/audio/", "destination": "/audio/index.html" },
     { "source": "/video", "destination": "/video/index.html" },
-    { "source": "/video/", "destination": "/video/index.html" }
+    { "source": "/video/", "destination": "/video/index.html" },
+    { "source": "/privacidad", "destination": "/privacidad/index.html" },
+    { "source": "/privacidad/", "destination": "/privacidad/index.html" },
+    { "source": "/terminos", "destination": "/terminos/index.html" },
+    { "source": "/terminos/", "destination": "/terminos/index.html" },
+    { "source": "/contacto", "destination": "/contacto/index.html" },
+    { "source": "/contacto/", "destination": "/contacto/index.html" }
   ],
   "cleanUrls": true
 }
