@@ -3,36 +3,63 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Donum Avis — 20+ Herramientas Online Gratis, Rápidas y Sin Registro</title>
-<meta name="description" content="El regalo del ave. Herramientas simples para imágenes, texto, archivos, audio, video, tiempo y fechas. Gratis, sin registro.">
+<title>Donum Avis — Editor de Imagen, Audio y Video Online Gratis</title>
+<meta name="description" content="El regalo del ave. Edita imágenes, audio y video gratis y rápido. Herramientas simples para texto, archivos, tiempo y fechas. Sin registro.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://donumavis.com/">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 120'><ellipse cx='88' cy='66' rx='47' ry='29' fill='%232e83b6'/><path d='M124 45l25 7-23 9z' fill='%23e2a52f'/></svg>">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:#061522;color:#e6f0f7;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;min-height:100vh;-webkit-font-smoothing:antialiased}
-#donum-home{min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:24px 16px 40px;position:relative;overflow:hidden}
-#donum-home::before{content:'';position:absolute;inset:0;background:radial-gradient(1200px 600px at 50% -10%,rgba(14,165,233,0.18),transparent),radial-gradient(800px 400px at 80% 30%,rgba(251,191,36,0.08),transparent);pointer-events:none}
-.da-top{width:100%;max-width:1100px;display:flex;justify-content:flex-end;position:relative;z-index:2}
+#donum-home{min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:24px 16px 56px;position:relative;overflow:hidden}
+#donum-home::before{content:'';position:absolute;inset:0;background:radial-gradient(1000px 500px at 20% -10%,rgba(14,165,233,0.22),transparent),radial-gradient(900px 500px at 80% 0%,rgba(168,85,247,0.16),transparent),radial-gradient(800px 400px at 60% 30%,rgba(251,191,36,0.10),transparent);pointer-events:none}
+.da-top{width:100%;max-width:1160px;display:flex;justify-content:flex-end;position:relative;z-index:2}
 #da-lang{background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);color:#a8c0d0;padding:6px 12px;border-radius:999px;font-size:12px;letter-spacing:0.08em;cursor:pointer;backdrop-filter:blur(8px)}
-.da-hero{display:flex;flex-direction:column;align-items:center;margin:28px 0 18px;position:relative;z-index:2}
-.da-logo{width:92px;height:72px;filter:drop-shadow(0 8px 24px rgba(14,165,233,0.25))}
-.da-name{margin-top:14px;font-size:34px;font-weight:700;letter-spacing:-0.02em;line-height:1}
-.da-name span{font-weight:300;opacity:0.9}
-.da-tag{margin-top:6px;font-size:13px;letter-spacing:0.18em;text-transform:uppercase;color:#7eb8d4;opacity:0.9}
-.da-rule{margin-top:14px;width:64px;height:2px;background:linear-gradient(90deg,transparent,#fde68a,transparent);border-radius:999px;opacity:0.9}
-.da-question{margin:36px 0 22px;font-size:22px;font-weight:600;text-align:center;position:relative;z-index:2;color:#f0f7fb;letter-spacing:-0.01em}
-.da-grid{width:100%;max-width:520px;display:flex;flex-direction:column;gap:14px;position:relative;z-index:2}
-
-.da-card{position:relative;display:flex;align-items:center;gap:14px;padding:16px 14px 16px 16px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:16px;backdrop-filter:blur(12px);cursor:pointer;text-align:left;transition:all .18s ease;overflow:hidden;text-decoration:none}
-.da-card:hover{transform:translateY(-1px);background:rgba(255,255,255,0.09);border-color:rgba(253,230,138,0.22);box-shadow:0 8px 24px rgba(0,0,0,0.25)}
-.da-icon{width:42px;height:42px;flex:0 0 42px;display:grid;place-items:center;background:rgba(14,165,233,0.14);border:1px solid rgba(14,165,233,0.22);border-radius:12px;color:#7dd3fc}
-.da-icon svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
-.da-card strong{display:block;font-size:15px;font-weight:600;color:#f2f8fc}
-.da-card small{display:block;margin-top:2px;font-size:12.5px;color:#8fb4c8}
-.da-arrow{margin-left:auto;color:#5f7f90;font-size:20px}
-.da-note{margin-top:28px;font-size:13px;color:#6e8ea1;text-align:center;max-width:520px;line-height:1.5;position:relative;z-index:2}
-.da-foot{margin-top:36px;font-size:11px;color:#3d5a6b;letter-spacing:0.06em;position:relative;z-index:2;text-align:center;line-height:1.8}
+.da-hero{display:flex;flex-direction:column;align-items:center;margin:22px 0 10px;position:relative;z-index:2;text-align:center}
+.da-logo{width:96px;height:76px;filter:drop-shadow(0 10px 28px rgba(14,165,233,0.28))}
+.da-name{margin-top:14px;font-size:36px;font-weight:800;letter-spacing:-0.03em;line-height:1}
+.da-name span{font-weight:300;opacity:.9}
+.da-tag{margin-top:6px;font-size:12px;letter-spacing:0.22em;text-transform:uppercase;color:#7eb8d4;opacity:.9}
+.da-rule{margin-top:14px;width:64px;height:2px;background:linear-gradient(90deg,transparent,#fde68a,transparent);border-radius:999px;opacity:.9}
+.da-question{margin:34px 0 8px;font-size:26px;font-weight:700;text-align:center;position:relative;z-index:2;color:#f0f7fb;letter-spacing:-0.02em;line-height:1.2}
+.da-sub{margin-bottom:28px;font-size:14px;color:#8fb4c8;text-align:center;max-width:560px;line-height:1.5;position:relative;z-index:2}
+.da-featured{width:100%;max-width:1160px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;position:relative;z-index:2;margin-bottom:28px}
+@media(max-width:900px){.da-featured{grid-template-columns:1fr;max-width:520px}}
+.feat-card{position:relative;display:flex;flex-direction:column;padding:20px 18px 16px;border-radius:22px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.05);backdrop-filter:blur(16px);overflow:hidden;text-decoration:none;transition:all .22s ease;min-height:188px}
+.feat-card:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(0,0,0,0.35);border-color:rgba(255,255,255,0.18)}
+.feat-card::before{content:'';position:absolute;inset:0;background:radial-gradient(500px 200px at 20% 0%,rgba(255,255,255,0.08),transparent);pointer-events:none}
+.feat-top{display:flex;align-items:center;justify-content:flex-start;margin-bottom:14px}
+.feat-icon{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;border:1px solid rgba(255,255,255,0.12)}
+.feat-icon svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.feat-badge{font-size:10px;letter-spacing:0.12em;text-transform:uppercase;padding:5px 9px;border-radius:999px;border:1px solid rgba(255,255,255,0.14);background:rgba(0,0,0,0.18);color:#cbd8e2}
+.feat-card strong{font-size:19px;font-weight:700;letter-spacing:-0.02em;color:#f7fbfe}
+.feat-card p{margin-top:6px;font-size:13.5px;line-height:1.45;color:#a9c3d5}
+.feat-list{margin-top:14px;display:flex;flex-wrap:wrap;gap:6px}
+.feat-list span{font-size:11px;padding:5px 9px;border-radius:999px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.08);color:#b8cddd}
+.feat-cta{margin-top:auto;padding-top:16px;display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600;letter-spacing:0.02em}
+.feat-card.imagenes{background:linear-gradient(180deg,rgba(14,165,233,0.18),rgba(255,255,255,0.04));border-color:rgba(14,165,233,0.25)}
+.feat-card.imagenes .feat-icon{background:rgba(14,165,233,0.18);border-color:rgba(14,165,233,0.28);color:#7dd3fc}
+.feat-card.imagenes .feat-cta{color:#7dd3fc}
+.feat-card.audio{background:linear-gradient(180deg,rgba(168,85,247,0.20),rgba(255,255,255,0.04));border-color:rgba(168,85,247,0.28)}
+.feat-card.audio .feat-icon{background:rgba(168,85,247,0.20);border-color:rgba(168,85,247,0.30);color:#d8b4fe}
+.feat-card.audio .feat-cta{color:#d8b4fe}
+.feat-card.video{background:linear-gradient(180deg,rgba(251,191,36,0.20),rgba(255,255,255,0.04));border-color:rgba(251,191,36,0.28)}
+.feat-card.video .feat-icon{background:rgba(251,191,36,0.18);border-color:rgba(251,191,36,0.28);color:#fde68a}
+.feat-card.video .feat-cta{color:#fde68a}
+.da-divider{width:100%;max-width:1160px;display:flex;align-items:center;gap:14px;margin:8px 0 18px;position:relative;z-index:2}
+.da-divider::before,.da-divider::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.12),transparent)}
+.da-divider span{font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#5f7f90}
+.da-secondary{width:100%;max-width:1160px;display:grid;grid-template-columns:repeat(4,1fr);gap:12px;position:relative;z-index:2}
+@media(max-width:900px){.da-secondary{grid-template-columns:repeat(2,1fr);max-width:520px}}
+@media(max-width:420px){.da-secondary{grid-template-columns:1fr}}
+.sec-card{position:relative;display:flex;align-items:center;gap:12px;padding:14px 12px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:14px;backdrop-filter:blur(10px);text-decoration:none;transition:all .18s ease}
+.sec-card:hover{background:rgba(255,255,255,0.07);border-color:rgba(255,255,255,0.12);transform:translateY(-1px)}
+.sec-icon{width:36px;height:36px;flex:0 0 36px;display:grid;place-items:center;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.08);border-radius:10px;color:#8fb4c8}
+.sec-icon svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.sec-card strong{display:block;font-size:13.5px;font-weight:600;color:#dbe9f2}
+.sec-card small{display:block;margin-top:1px;font-size:11.5px;color:#7a9aaf}
+.da-note{margin-top:30px;font-size:13px;color:#6e8ea1;text-align:center;max-width:520px;line-height:1.5;position:relative;z-index:2}
+.da-foot{margin-top:40px;font-size:11px;color:#3d5a6b;letter-spacing:0.06em;position:relative;z-index:2;text-align:center;line-height:1.8}
 </style>
 </head>
 <body>
@@ -58,17 +85,47 @@ body{background:#061522;color:#e6f0f7;font-family:ui-sans-serif,system-ui,-apple
     <div class="da-tag" data-es="El regalo del ave" data-en="The gift of the bird">El regalo del ave</div>
     <div class="da-rule"></div>
   </section>
-  <h1 class="da-question" data-es="¿Qué necesitas hacer hoy?" data-en="What do you need to do today?">¿Qué necesitas hacer hoy?</h1>
-  <div class="da-grid">
-    <a class="da-card" href="/imagenes/"><span class="da-icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9" r="1.5"/><path d="m4 17 5-5 4 4 2-2 5 5"/></svg></span><span><strong data-es="Imágenes" data-en="Images">Imágenes</strong><small data-es="Editar y transformar" data-en="Edit and transform">Editar y transformar</small></span><span class="da-arrow">›</span></a>
-    <a class="da-card" href="/tiempo/"><span class="da-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3.5 2"/></svg></span><span><strong data-es="Tiempo" data-en="Time">Tiempo</strong><small data-es="Calcular y convertir" data-en="Calculate and convert">Calcular y convertir</small></span><span class="da-arrow">›</span></a>
-    <a class="da-card" href="/fechas/"><span class="da-icon"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18M7 14h2M12 14h2M17 14h1M7 18h2M12 18h2"/></svg></span><span><strong data-es="Fechas" data-en="Dates">Fechas</strong><small data-es="Contar y planificar" data-en="Count and plan">Contar y planificar</small></span><span class="da-arrow">›</span></a>
-    <a class="da-card" href="/texto/"><span class="da-icon"><svg viewBox="0 0 24 24"><path d="M5 5h14M12 5v14M8 19h8"/></svg></span><span><strong data-es="Texto" data-en="Text">Texto</strong><small data-es="Analizar y convertir" data-en="Analyze and convert">Analizar y convertir</small></span><span class="da-arrow">›</span></a>
-    <a class="da-card" href="/archivos/"><span class="da-icon"><svg viewBox="0 0 24 24"><path d="M3.5 7.5h6l2 2h9v9.5a2 2 0 0 1-2 2h-13a2 2 0 0 1-2-2z"/><path d="M3.5 7.5V5a2 2 0 0 1 2-2h4l2 2h4"/></svg></span><span><strong data-es="Archivos" data-en="Files">Archivos</strong><small data-es="Comprimir y convertir" data-en="Compress and convert">Comprimir y convertir</small></span><span class="da-arrow">›</span></a>
-    <a class="da-card" href="/audio/"><span class="da-icon"><svg viewBox="0 0 24 24"><path d="M9 18V6l9-2v12"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="15.5" cy="16" r="2.5"/></svg></span><span><strong data-es="Audio" data-en="Audio">Audio</strong><small data-es="Editar y convertir" data-en="Edit and convert">Editar y convertir</small></span><span class="da-arrow">›</span></a>
-    <a class="da-card" href="/video/"><span class="da-icon"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="14" height="14" rx="2"/><path d="m17 10 4-2v8l-4-2z"/></svg></span><span><strong data-es="Video" data-en="Video">Video</strong><small data-es="Editar y convertir" data-en="Edit and convert">Editar y convertir</small></span><span class="da-arrow">›</span></a>
+
+  <h1 class="da-question" data-es="¿Qué quieres crear hoy?" data-en="What do you want to create today?">¿Qué quieres crear hoy?</h1>
+  <p class="da-sub" data-es="Edita lo que más usas. Rápido, privado y gratis, sin subir nada a servidores." data-en="Edit what you use most. Fast, private and free, nothing uploaded to servers.">Edita lo que más usas. Rápido, privado y gratis, sin subir nada a servidores.</p>
+
+  <div class="da-featured">
+    <!-- IMAGENES - PRINCIPAL -->
+    <a class="feat-card imagenes" href="/imagenes/">
+      <div class="feat-top"><span class="feat-icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9" r="1.5"/><path d="m4 17 5-5 4 4 2-2 5 5"/></svg></span></div>
+      <strong data-es="Imágenes" data-en="Images">Imágenes</strong>
+      <p data-es="Comprime, redimensiona, convierte JPG, PNG, WEBP y recorta sin perder calidad." data-en="Compress, resize, convert JPG, PNG, WEBP and crop without losing quality.">Comprime, redimensiona, convierte JPG, PNG, WEBP y recorta sin perder calidad.</p>
+      <div class="feat-list"><span>JPG</span><span>PNG</span><span>WEBP</span><span>Recortar</span></div>
+      <div class="feat-cta"><span data-es="Abrir editor" data-en="Open editor">Abrir editor</span><span>→</span></div>
+    </a>
+    <!-- VIDEO - PRINCIPAL -->
+    <a class="feat-card video" href="/video/">
+      <div class="feat-top"><span class="feat-icon"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="14" height="14" rx="2"/><path d="m17 10 4-2v8l-4-2z"/></svg></span></div>
+      <strong data-es="Video" data-en="Video">Video</strong>
+      <p data-es="Corta, comprime y convierte MP4 y WEBM. Rápido, sin marca de agua." data-en="Trim, compress and convert MP4 and WEBM. Fast, no watermark.">Corta, comprime y convierte MP4 y WEBM. Rápido, sin marca de agua.</p>
+      <div class="feat-list"><span>MP4</span><span>WEBM</span><span>Cortar</span><span>Sin marca</span></div>
+      <div class="feat-cta"><span data-es="Abrir editor" data-en="Open editor">Abrir editor</span><span>→</span></div>
+    </a>
+    <!-- AUDIO - PRINCIPAL -->
+    <a class="feat-card audio" href="/audio/">
+      <div class="feat-top"><span class="feat-icon"><svg viewBox="0 0 24 24"><path d="M9 18V6l9-2v12"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="15.5" cy="16" r="2.5"/></svg></span></div>
+      <strong data-es="Audio y Música" data-en="Audio & Music">Audio y Música</strong>
+      <p data-es="Corta MP3, convierte formatos, graba voz y ajusta volumen. " data-en="Trim MP3, convert formats, record voice and adjust volume. ">Corta MP3, convierte formatos, graba voz y ajusta volumen. </p>
+      <div class="feat-list"><span>MP3</span><span>WAV</span><span>Grabar</span><span>Cortar</span></div>
+      <div class="feat-cta"><span data-es="Abrir editor" data-en="Open editor">Abrir editor</span><span>→</span></div>
+    </a>
   </div>
-  <p class="da-note" data-es="Sencillo, rápido y sin complicaciones. Elige una herramienta y empieza." data-en="Simple, fast and without the hassle. Choose a tool and get started.">Sencillo, rápido y sin complicaciones. Elige una herramienta y empieza.</p>
+
+  
+
+  <div class="da-secondary">
+    <a class="sec-card" href="/texto/"><span class="sec-icon"><svg viewBox="0 0 24 24"><path d="M5 5h14M12 5v14M8 19h8"/></svg></span><span><strong data-es="Texto" data-en="Text">Texto</strong><small data-es="Analizar y convertir" data-en="Analyze and convert">Analizar y convertir</small></span></a>
+    <a class="sec-card" href="/archivos/"><span class="sec-icon"><svg viewBox="0 0 24 24"><path d="M3.5 7.5h6l2 2h9v9.5a2 2 0 0 1-2 2h-13a2 2 0 0 1-2-2z"/><path d="M3.5 7.5V5a2 2 0 0 1 2-2h4l2 2h4"/></svg></span><span><strong data-es="Archivos" data-en="Files">Archivos</strong><small data-es="Comprimir y convertir" data-en="Compress and convert">Comprimir y convertir</small></span></a>
+    <a class="sec-card" href="/fechas/"><span class="sec-icon"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18M7 14h2M12 14h2M17 14h1M7 18h2M12 18h2"/></svg></span><span><strong data-es="Fechas" data-en="Dates">Fechas</strong><small data-es="Contar y planificar" data-en="Count and plan">Contar y planificar</small></span></a>
+    <a class="sec-card" href="/tiempo/"><span class="sec-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3.5 2"/></svg></span><span><strong data-es="Tiempo" data-en="Time">Tiempo</strong><small data-es="Calcular y convertir" data-en="Calculate and convert">Calcular y convertir</small></span></a>
+  </div>
+
+  
   <div class="da-foot">© 2026 DONUM AVIS • EL REGALO DEL AVE<br>
   <span style="margin-top:12px;display:inline-flex;gap:16px;flex-wrap:wrap;justify-content:center">
     <a href="/privacidad/" style="color:#7eb8d4;text-decoration:none">Privacidad</a>
